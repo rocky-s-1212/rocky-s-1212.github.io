@@ -269,6 +269,10 @@ footer {
     color:white;
     background-color:rgb(0,0,204,);
   }
+
+  .btn:active {
+    opacity: 1;
+  }
 }
 
 
