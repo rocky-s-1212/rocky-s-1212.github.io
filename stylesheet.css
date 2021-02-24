@@ -275,7 +275,7 @@ footer {
 @media (max-width: 599px) {
 
   .title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .top-wrapper {
     height: 300px;
@@ -285,7 +285,7 @@ footer {
   }
 
   .header-left {
-    font-size: 35px;
+    font-size: 30px;
   }
 
 }
