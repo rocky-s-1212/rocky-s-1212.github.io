@@ -69,16 +69,20 @@
       </div>
     </div>
     <div id="contact-btn" class="contact-wrapper">
+      <form action="" method="post" id="form">
       <div class="container">
         <h2>お問い合わせ</h2>
         <p>あなただけの楽しみ方を見つけてみましょう！</p>
         <div class="form-group">
-          <textarea placeholder="お名前"></textarea>
-          <textarea placeholder="メールアドレス"></textarea>
+          <form action="sent.php" method="post"></form>
+          <input type="text" placeholder="お名前" id="name-form">
+          <input type="text" placeholder="メールアドレス" id="mail-form">
+          <p id="error-message" class="error-message"></p>
         </div>
-        <span href="#" class="btn">ご相談はこちら</span>
+        <input type="submit" value="ご相談はこちら">
         <div id="click">ご連絡ありがとうございます！</div>
       </div>
+      </form>
     </div>
     <footer>
       <p>Copyright &#169; ROCKY STUDIO All Rights Reserved.</p>
