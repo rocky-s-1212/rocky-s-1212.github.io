@@ -19,9 +19,22 @@ $(function(){
         $('.method-icon p').slideDown(1500);
     });
     
-    $('.btn').click(function(){
-        $('#click').show();
+    $('#form').submit(function(){
+        var nameValue = $('#name-form').val();
+        var mailValue = $('#mail-form').val();
+
+        if (nameValue == ''){
+            $('#error-message').text('※空欄があります');
+        } else if (mailValue == '') {
+            $('#error-message').text('※空欄があります');
+        } else {
+            $('#error-message').text('');
+            $('#click').show();
+        }
+        return false;
     });
+
+
 
 
 });
