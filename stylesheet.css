@@ -190,16 +190,23 @@ img {
   padding: 50px 0 80px 0;
 }
 
-textarea {
+.form-group {
+  height: 15vh;
+  margin-bottom: 3vh;
+}
+
+input[type="text"] {
   resize: none;
   width: 300px;
   height: 30px;
   border-radius: 5px;
   border: 2px solid lightgray;
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
-.btn {
+input[type="submit"] {
+  outline: none;
   background-color:rgb(218, 165, 32);
   padding: 15px 40px;
   color: white;
@@ -211,11 +218,11 @@ textarea {
   margin-bottom: 30px;
 }
 
-.btn:hover {
+input[type="submit"]:hover {
   opacity: 1;
 }
 
-.btn:active {
+input[type="submit"]:active {
   box-shadow: none;
   position: relative;
   top: 8px;
@@ -228,6 +235,13 @@ textarea {
   right: 0;
   margin: auto;
 }
+
+.error-message {
+  color: red;
+}
+
+
+/*ここからフッター*/
 
 footer {
   font-size: 6px;
@@ -267,12 +281,13 @@ footer {
 @media only screen and (max-width: 1024px) {
   li:active {
     color:white;
-    background-color:rgb(0,0,204,);
+    background-color:rgb(0,0,204);
   }
 
-  .btn:active {
+  input[type="submit"]:active {
     opacity: 1;
   }
+
 }
 
 
@@ -293,5 +308,4 @@ footer {
   }
 
 }
-
 
